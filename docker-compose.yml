@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: $TARGET
+    image: art-generator_local_app
+    container_name: art-generator_local_app
+    restart: always
+    volumes:
+      - .:/app
+    tty: true

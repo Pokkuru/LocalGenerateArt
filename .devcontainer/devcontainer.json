@@ -1,0 +1,27 @@
+{
+	"name": "Art generator local app",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "app",
+	"runServices": [
+		"app"
+	],
+	"workspaceFolder": "/app",
+	"settings": {
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "bash",
+				"icon": "terminal-bash"
+			},
+			"zsh": {
+				"path": "zsh"
+			}
+		},
+		"python.pythonPath": "/usr/local/bin/python"
+	},
+	"extensions": [
+		"ms-python.python"
+	],
+	"remoteUser": "root"
+}
